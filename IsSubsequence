@@ -1,3 +1,20 @@
+Example 1:
+
+Input: s = "abc", t = "ahbgdc"
+Output: true
+Example 2:
+
+Input: s = "axc", t = "ahbgdc"
+Output: false
+
+Explanation:
+1. first take two pointers i and j to 0
+2. the both pointers should not cross the len of their respective strings
+3. check s[i]==t[j] and increment if it goes on
+4. Always increment j no matter what
+5. And finally return i==len(s0
+
+Code:
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         i=0
